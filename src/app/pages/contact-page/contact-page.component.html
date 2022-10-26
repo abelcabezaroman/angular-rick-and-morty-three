@@ -1,0 +1,16 @@
+<form [formGroup]="userRegisterForm" (ngSubmit)="submit()">
+  <input type="text" formControlName="name">
+
+  <app-form-errors *ngIf="isSubmit" [errors]="userRegisterForm.controls['name'].errors"></app-form-errors>
+
+  <input type="text" formControlName="role">
+
+  <app-form-errors *ngIf="isSubmit" [errors]="userRegisterForm.controls['role'].errors"></app-form-errors>
+
+
+  <input type="number" formControlName="age">
+
+  <app-form-errors *ngIf="isSubmit" [errors]="userRegisterForm.controls['age'].errors"></app-form-errors>
+
+  <button>Enviar</button>
+</form>

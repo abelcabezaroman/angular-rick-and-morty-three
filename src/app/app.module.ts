@@ -7,18 +7,24 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CharactersPageComponent } from './pages/characters-page/characters-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './shared/components/gallery/gallery.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormErrorsComponent } from './shared/components/form-errors/form-errors.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     CharactersPageComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactPageComponent,
+    FormErrorsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
