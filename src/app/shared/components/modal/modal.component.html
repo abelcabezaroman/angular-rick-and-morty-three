@@ -1,0 +1,11 @@
+<div *ngIf="modalData" class="c-modal">
+  <div class="c-modal__content">
+    <h2>{{modalData.title}}</h2>
+    <p>{{modalData.description}}</p>
+    <button>No</button>
+    <button>Si</button>
+
+    <button (click)="closeModal()" class="c-modal__close">X</button>
+  </div>
+
+</div>

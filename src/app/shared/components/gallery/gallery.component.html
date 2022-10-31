@@ -1,4 +1,9 @@
 <figure *ngFor="let item of list">
   <img src="{{ item.image }}" alt="" />
-  <figcaption>{{ item.name }}</figcaption>
+  <figcaption>{{ item.name | priorityName: "*":"+":"Rick" }}</figcaption>
+  <p>{{ item.created | date }}</p>
+  <p>{{ item.created | date: "dd/MM/yyyy" }}</p>
+  <p>{{ item.created | date: "MM/dd/yyyy" }}</p>
+  <p>{{ item.created | date: "MM:dd:yyyy" }}</p>
+  <p>{{ item.created | date: "dd-MM-yyyy" }}</p>
 </figure>

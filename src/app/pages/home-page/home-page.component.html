@@ -1,1 +1,32 @@
+{{fruit | json}}
+
+
+
+
 <p>home-page works!</p>
+<p-button label="Click" ></p-button>
+<p-button label="Click" icon="pi pi-users" iconPos="left"></p-button>
+<button pButton type="button" label="Danger" class="p-button-danger"></button>
+<button pButton type="button" class="p-button-raised p-button-rounded"></button>
+<button pButton type="button" label="Primary" class="p-button-outlined"></button>
+<button pButton type="button" label="Link" class="p-button-link"></button>
+<button pButton type="button" label="Messages" icon="pi pi-users" class="p-button-warning" badge="8" badgeClass="p-badge-info"></button>
+
+<span class="p-buttonset">
+  <button pButton type="button" label="Save" icon="pi pi-check"></button>
+  <button pButton type="button" label="Delete" icon="pi pi-trash"></button>
+  <button pButton type="button" label="Cancel" icon="pi pi-times"></button>
+</span>
+
+
+<form [formGroup]="ratingForm">
+
+  <p-rating formControlName="rate" ></p-rating>
+
+</form>
+
+
+<div>
+  <p-knob [(ngModel)]="value"></p-knob>
+
+</div>
