@@ -13,8 +13,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {RatingModule} from 'primeng/rating';
 import {KnobModule} from 'primeng/knob';
 import { PriorityNamePipe } from './shared/pipes/priority-name.pipe';
-import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { ModalComponent } from './shared/components/modal/modal.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { FormErrorsComponent } from './shared/components/form-errors/form-errors.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ModalComponent } from './shared/components/modal/modal.component';
     GalleryComponent,
     PriorityNamePipe,
     ContactPageComponent,
-    ModalComponent
+    ModalComponent,
+    FormErrorsComponent
   ],
   imports: [
     BrowserModule,

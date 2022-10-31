@@ -1,0 +1,5 @@
+<span *ngIf="errors && errors['required']">Este campo es requerido</span>
+
+<span *ngIf="errors && errors['minlength']">Este campo tiene que tener minimo {{errors['minlength'].requiredLength}} caracteres</span>
+
+<!-- Aqui podrias añadir textos customizados para todos los tipos de validaciones -->

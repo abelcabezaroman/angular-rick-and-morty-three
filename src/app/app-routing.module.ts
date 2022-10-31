@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: "characters", component: CharactersPageComponent
   },
-  {
+ {
     path: "contact", component: ContactPageComponent
   }
 ];
